@@ -1,8 +1,10 @@
 // import Hero from "./components/Hero/Hero"
 // import Navbar from "./components/Navbar/Navbar"
 
+import Boost from "./components/Boost/Boost"
+
 // import UrlShortener from "./components/UrlShortener/UrlShortener"
-import Features from "./components/Features/Features"
+// import Features from "./components/Features/Features"
 
 function App() {
   return (
@@ -11,7 +13,8 @@ function App() {
       {/* <Navbar /> */}
       {/* <Hero /> */}
       {/* <UrlShortener /> */}
-      <Features />
+      {/* <Features /> */}
+      <Boost />
     </>
   )
 }

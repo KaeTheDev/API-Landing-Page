@@ -1,6 +1,6 @@
 export default function Hero() {
     return(
-        <section className="hero">
+        <section>
         <div className="max-w-7xl mx-auto my-4 px-4">
           <div className="flex flex-col-reverse md:flex-row items-center">
             
