@@ -20,7 +20,7 @@ export default function UrlShortener() {
 
   return (
     <section className="py-10 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4 py-6 bg-blue-950 rounded-lg">
+      <div className="max-w-6xl mx-auto px-8 py-12 ml-3 mr-3 bg-blue-950 rounded-lg">
         {/* Shortener Form */}
         <form
           className="flex flex-col md:flex-row gap-3 justify-center items-stretch"

@@ -4,7 +4,7 @@ export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <nav className="bg-primary w-full fixed top-0 z-20">
+    <nav className="bg-primary w-full">
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
         
         {/* Left side: Logo + nav links */}

@@ -1,22 +1,28 @@
-// import Hero from "./components/Hero/Hero"
-// import Navbar from "./components/Navbar/Navbar"
-
-import Boost from "./components/Boost/Boost"
-
-// import UrlShortener from "./components/UrlShortener/UrlShortener"
-// import Features from "./components/Features/Features"
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
+import UrlShortener from "./components/UrlShortener/UrlShortener";
+import Features from "./components/Features/Features";
+import Boost from "./components/Boost/Boost";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <>
-      {/* <h2 className="text-3xl text-blue-500">KaeTheDev is the GREATEST!</h2> */}
-      {/* <Navbar /> */}
-      {/* <Hero /> */}
-      {/* <UrlShortener /> */}
-      {/* <Features /> */}
-      <Boost />
-    </>
-  )
+    <div className="min-h-screen flex flex-col">
+      {/* Navbar */}
+      <Navbar />
+
+      {/* Main page content */}
+      <main className="grow">
+        <Hero />
+        <UrlShortener />
+        <Features />
+        <Boost />
+      </main>
+
+      {/* Footer */}
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
