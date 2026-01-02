@@ -38,7 +38,10 @@ export default function UrlShortener() {
       }
 
       // Add shortened link to state
-      setShortenedLinks([...shortenedLinks, { original: url, short: data.link }]);
+      setShortenedLinks([
+        ...shortenedLinks,
+        { original: url, short: data.link },
+      ]);
       setUrl("");
     } catch (err) {
       setError("Failed to shorten URL. Try again");
@@ -76,14 +79,21 @@ export default function UrlShortener() {
 
         {/* Error message */}
         {error && (
-          <div className="text-red-500 mt-2 text-center md:text-left" role="alert">
+          <div
+            className="text-red-500 mt-2 text-center md:text-left"
+            role="alert"
+          >
             {error}
           </div>
         )}
 
         {/* Shortened Links */}
         {shortenedLinks.length > 0 && (
-          <div id="shortened-links" className="mt-6 space-y-3" aria-live="polite">
+          <div
+            id="shortened-links"
+            className="mt-6 space-y-3"
+            aria-live="polite"
+          >
             {shortenedLinks.map((link, index) => (
               <div
                 key={index}
@@ -92,7 +102,9 @@ export default function UrlShortener() {
                 {/* Original + Shortened URL */}
                 <div className="flex flex-col md:flex-row md:gap-4 wrap-break-word">
                   <span className="text-gray-500">{link.original}</span>
-                  <span className="text-teal-500 font-semibold">{link.short}</span>
+                  <span className="text-teal-500 font-semibold">
+                    {link.short}
+                  </span>
                 </div>
 
                 {/* Copy button */}
