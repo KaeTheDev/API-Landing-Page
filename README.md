@@ -93,3 +93,11 @@ npm run dev
 
 
 ## Reflection
+
+During the development of my URL shortener web app, I followed a structured, step-by-step process to build a fully functional, responsive frontend using React and Tailwind CSS. I started by designing the layout, breaking the interface into reusable components including the Navbar, Hero section, URL shortener form, Features, Boost, and Footer. Using Tailwind allowed me to quickly implement responsive design and maintain consistent styling without writing extensive custom CSS.
+
+One of the main challenges I encountered was integrating the Bitly API. Initially, I was storing shortened URLs as simple strings, which caused TypeScript type errors and made it difficult to associate the original URL with the shortened version. To solve this, I defined a ShortenedLink type with original and short properties and updated my state management accordingly. Another challenge was implementing the copy-to-clipboard functionality with a dynamic “Copied!” button label. I solved this by tracking the index of the last copied link in state and using a timeout to reset the label, ensuring clear user feedback without breaking the list rendering.
+
+I also worked to ensure the user experience was smooth and responsive. For example, the URL input required validation to prevent empty submissions, and shortened links only appear once successfully created. Tailwind’s utility classes allowed me to center content, control spacing, and make the layout visually appealing across desktop and mobile.
+
+Overall, this project strengthened my understanding of React state management, API integration, TypeScript typing, and responsive design principles, while also highlighting the importance of clear error handling and user feedback in interactive web applications.
