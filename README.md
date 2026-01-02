@@ -62,8 +62,27 @@ Fix some of the design issues I noticed like the logo being the wrong color in t
 ### Useful resources
 
 - [Tailwind Documentation](https://tailwindcss.com) - This helped for when there were classes or behavior about Tailwind that I did not know.
-- [Cuttly Documentation]() - This is how I learned to implement the Cuttly API
 - [Bit.ly](https://dev.bitly.com/api-reference/#createFullBitlink) - Bit.ly documentation for the API
+
+##  Installation
+
+1. Clone the repository:
+
+git clone [<repository-url>](https://github.com/KaeTheDev/API-Landing-Page.git)
+
+2. Navigate into the project folder:
+
+cd api-landing-page
+
+##  Setup
+
+1. Install dependencies:
+
+npm install
+
+2. Run the project:
+
+npm run dev
 
 
 ## Author
